@@ -10,7 +10,7 @@ block style-libs
 	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
 	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
 	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
-	//- link(rel="stylesheet", href="css/libs/slick.css")
+	link(rel="stylesheet", href="css/libs/slick.css")
 	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
 	//- link(rel="stylesheet", href="css/libs/aos.css")
 
@@ -39,14 +39,89 @@ block content
 					img(src="img/nacobr.png", alt="")
 			// /welcome
 
+			// topics
+			section.topics
+				.wrapper
+					h2.title В рамках конференции планируется освещение следующих вопросов:
+					.topics__item.topics__item--1
+						.topics__text Реализация единых подходов к формированию и оцениванию основных видов речевой деятельности
+						.topics__num 1
+					.topics__item.topics__item--2
+						.topics__num 2
+						.topics__text Изменения в государственной итоговой аттестации по русскому языку в контексте единых подходов к формированию и развитию основных видов речевой деятельности 
+					.topics__item.topics__item--1
+						.topics__text Основные направления совершенствования государственной итоговой аттестации по русскому языку 
+						.topics__num 3
+					.topics__item.topics__item--2
+						.topics__num 4
+						.topics__text Школьный контроль на современном этапе / специфика и интерпретация результатов
+					.topics__item.topics__item--1
+						.topics__text Тематический контроль по русскому языку / научно-методические подходы к созданию контрольных измерительных материалов для тематического контроля
+						.topics__num 5
+					.topics__item.topics__item--2
+						.topics__num 6
+						.topics__text Подходы к измерению динамики обученности по предмету 
+					.topics__item.topics__item--1
+						.topics__text Соотношение традиций и инновационных подходов в методике преподавания русского языка 
+						.topics__num 7
+			// /topics
 
+			// spickers
+			section.spickers
+				.wrapper
+					h2.title CПИКЕРЫ, принимающие участие в конференции:
+					.spickers__slider
+						#sliderSpickers
+							.spickers__item
+								.spickers__img 
+									img(src="img/photo_1.png", alt="")
+								.spickers__content
+									.spickers__name Цыбулько И. П. 
+									.spickers__text Ведущий научный сотрудник ФГБНУ «ФИПИ», руководитель комиссии разработчиков  КИМ для проведения ГИА по образовательным программам основного общего и среднего общего образования по русскому языку
+							.spickers__item
+								.spickers__img 
+									img(src="img/photo_2.png", alt="")
+								.spickers__content
+									.spickers__name Тишина Н. И.
+									.spickers__text Руководитель Центра дополнительного образования Федерального государственного бюджетного образовательного учреждения высшего образования «Государственный институт русского языка им. А. С. Пушкина»
+							.spickers__item
+								.spickers__img 
+									img(src="img/photo_3.png", alt="")
+								.spickers__content
+									.spickers__name Арутюнова Е. В.
+									.spickers__text Старший научный сотрудник Института русского языка им. В. В. Виноградова РАН, кандидат филологических наук, зам. главного редактора портала «Грамота.ру», член Орфографической комиссии РАН
+							.spickers__item
+								.spickers__img 
+									img(src="img/photo_4.png", alt="")
+								.spickers__content
+									.spickers__name Федорова Н. А. 
+									.spickers__text Кандидат филологических наук, руководитель модуля Creative technologies, Университет ИТМО
+							.spickers__item
+								.spickers__img 
+									img(src="img/photo_5.png", alt="")
+								.spickers__content
+									.spickers__name Крайник O. М. 
+									.spickers__text Начальник Учебно-методического управления ФГБОУ ВО «Алтайский государственный университет», член комиссии по разработке КИМ для ГИА по русскому языку
+							.spickers__item
+								.spickers__img 
+									img(src="img/photo_6.png", alt="")
+								.spickers__content
+									.spickers__name Александров В. Н.
+									.spickers__text Учитель русского языка и литературы муниципального общеобразовательного учреждения «Рощинская средняя общеобразовательная школа», кандидат педагогических наук
+							.spickers__item
+								.spickers__img 
+									img(src="img/photo_7.png", alt="")
+								.spickers__content
+									.spickers__name Иванов С. Л.
+									.spickers__text Заведующий кафедрой, учитель русского языка общеобразовательной автономной некоммерческой организации «Школа «Летово», кандидатпедагогических наук
+			// /spickers
 
 		//- include blocks/footer.pug
 
 block js-libs
 	script(src="js/libs/jquery.min.js")
 	//- script(src="js/libs/jquery.fancybox.min.js")
-	//- script(src="js/libs/slick.min.js")
+	script(src="js/libs/slick.min.js")
 	//- script(src="js/libs/jquery.matchHeight-min.js")
 	//- script(src="js/libs/jquery.inputmask.min.js")
 	//- script(src="js/libs/autosize.min.js")
