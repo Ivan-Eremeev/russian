@@ -104,7 +104,6 @@ body {
   font-family: "RobotoCondensed", sans-serif;
   font-size: calc(.01171875 * 100vw + 0px);
   line-height: 1.08;
-  letter-spacing: -0.1em;
 }
 body.lock {
   position: fixed;
@@ -226,17 +225,19 @@ body.lock {
 }
 
 /* /settings */
-.welcome {
+.welcome__container {
   padding: 5.6em 0 1.4em;
   background-image: url(../img/welcome-bg.jpg);
   background-color: #A27D46;
   background-size: cover;
   background-position: right;
+  position: relative;
 }
 .welcome__content {
   text-align: center;
   width: 47em;
   margin-left: 0.2em;
+  letter-spacing: -0.1em;
 }
 .welcome__text {
   color: #A30803;
@@ -267,8 +268,57 @@ body.lock {
   padding: 0.3em 1.5em;
   text-align: center;
 }
+.welcome__sticker {
+  width: 14em;
+  height: 14em;
+  padding-top: 2.8em;
+  padding-left: 2em;
+  background-color: #F0B044;
+  border-radius: 100%;
+  position: absolute;
+  right: 0.5em;
+  bottom: 2em;
+  background-image: url(../img/flower.png);
+  background-repeat: no-repeat;
+  background-size: 5em;
+  background-position: center bottom -1em;
+}
+.welcome__desc {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.4em;
+}
+.welcome__name {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.3em;
+}
+.welcome__subtext {
+  font-size: 1em;
+  color: #fff;
+}
+.welcome__subdesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0.2em 0.5em;
+}
+.welcome__subdesc span {
+  font-size: 0.6em;
+  margin-right: 1.4em;
+}
+.welcome__subdesc img {
+  width: 6.8em;
+}
 @media (max-width: 769px) {
-  .welcome {
+  .welcome__container {
     background-position: right -37em top;
     background-repeat: no-repeat;
   }
@@ -278,7 +328,7 @@ body.lock {
     margin-right: auto;
   }
   .welcome__text {
-    font-size: 3.2em;
+    font-size: 2.9em;
   }
   .welcome__title {
     font-size: 4em;
@@ -288,5 +338,33 @@ body.lock {
   }
   .welcome__btn {
     font-size: 2.5em;
+  }
+  .welcome__sticker {
+    width: 22em;
+    height: 22em;
+    bottom: -6em;
+    padding-top: 4.8em;
+    padding-left: 3em;
+    background-size: 7em;
+  }
+  .welcome__desc {
+    font-size: 1.6em;
+  }
+  .welcome__name {
+    font-size: 2em;
+  }
+  .welcome__subtext {
+    font-size: 1.7em;
+  }
+  .welcome__subdesc {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .welcome__subdesc span {
+    font-size: 1em;
+  }
+  .welcome__subdesc img {
+    width: 12em;
   }
 }
