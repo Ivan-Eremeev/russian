@@ -40,13 +40,15 @@ $break_xs: 500px;
 // @import 'bootstrap/bootstrap'; // Подключение бутстрап
 
 // Шрифты
-// @include font-face("EastAP", "../fonts/EastAP/EastAP", bold, italic);
+@include font-face("RobotoCondensed", "../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-regular", normal, normal);
+@include font-face("RobotoCondensed", "../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-700", bold, normal);
 
 // Цвета
-// $black: #000;
+$red: #A30803;
 
 // Подключение файлов
 @import 'blocks/settings';
+@import 'blocks/welcome';
 // @import 'hamburgers/hamburgers';
 // @import 'blocks/menu';
 // @import 'blocks/accordion';

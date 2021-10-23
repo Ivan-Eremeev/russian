@@ -1,0 +1,62 @@
+.welcome {
+  padding: 5.6em 0 1.4em;
+  background-image: url(../img/welcome-bg.jpg);
+  background-color: #A27D46;
+  background-size: cover;
+  background-position: right;
+  &__content {
+    text-align: center;
+    width: 47em;
+    margin-left: 0.2em;
+  }
+  &__text {
+    color: $red;
+    font-size: 1.8em;
+    margin-bottom: 0.2em;
+  }
+  &__title {
+    color: #fff;
+    font-size: 3.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+  }
+  &__date {
+    color: $red;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 1.2em;
+  }
+  &__btn {
+    display: inline-block;
+    background-color: #864318;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FDDB79;
+    text-transform: uppercase;
+    padding: 0.3em 1.5em;
+    text-align: center;
+  }
+  @media (max-width: $break_sm) {
+    background-position: right -37em top;
+    background-repeat: no-repeat;
+    &__content {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__text {
+      font-size: 3.2em;
+    }
+    &__title {
+      font-size: 4em;
+    }
+    &__date {
+      font-size: 3.2em;
+    }
+    &__btn {
+      font-size: 2.5em;
+    }
+  }
+}

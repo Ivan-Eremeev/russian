@@ -65,6 +65,20 @@ h1, h2, h3 {
 }
 
 /* /reset */
+@font-face {
+  font-family: "RobotoCondensed";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-regular.eot");
+  src: url("../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-regular.woff") format("woff"), url("../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-regular.svg") format("svg");
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-700.eot");
+  src: url("../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-700.woff") format("woff"), url("../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/roboto-condensed/roboto-condensed-v19-latin_cyrillic-700.svg") format("svg");
+}
 /* settings */
 html {
   height: 100%;
@@ -80,16 +94,17 @@ a {
 button,
 input,
 textarea {
-  font-family: Arial;
-  font-size: 16px;
+  font-family: "RobotoCondensed", sans-serif;
 }
 
 body {
   height: 100%;
   min-width: 319px;
   background-color: #fff;
-  font-family: Arial;
-  font-size: 16px;
+  font-family: "RobotoCondensed", sans-serif;
+  font-size: calc(.01171875 * 100vw + 0px);
+  line-height: 1.08;
+  letter-spacing: -0.1em;
 }
 body.lock {
   position: fixed;
@@ -211,3 +226,67 @@ body.lock {
 }
 
 /* /settings */
+.welcome {
+  padding: 5.6em 0 1.4em;
+  background-image: url(../img/welcome-bg.jpg);
+  background-color: #A27D46;
+  background-size: cover;
+  background-position: right;
+}
+.welcome__content {
+  text-align: center;
+  width: 47em;
+  margin-left: 0.2em;
+}
+.welcome__text {
+  color: #A30803;
+  font-size: 1.8em;
+  margin-bottom: 0.2em;
+}
+.welcome__title {
+  color: #fff;
+  font-size: 3.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+.welcome__date {
+  color: #A30803;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 1.2em;
+}
+.welcome__btn {
+  display: inline-block;
+  background-color: #864318;
+  border-radius: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #FDDB79;
+  text-transform: uppercase;
+  padding: 0.3em 1.5em;
+  text-align: center;
+}
+@media (max-width: 769px) {
+  .welcome {
+    background-position: right -37em top;
+    background-repeat: no-repeat;
+  }
+  .welcome__content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .welcome__text {
+    font-size: 3.2em;
+  }
+  .welcome__title {
+    font-size: 4em;
+  }
+  .welcome__date {
+    font-size: 3.2em;
+  }
+  .welcome__btn {
+    font-size: 2.5em;
+  }
+}
