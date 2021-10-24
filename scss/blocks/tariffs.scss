@@ -1,0 +1,120 @@
+.tariffs {
+  .row {
+    margin-left: -3em;
+    margin-bottom: 4em;
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3em;
+    @include col(6);
+    position: relative;
+    &:nth-child(1) {
+      .tariffs__head {
+        background-color: #CB883B;
+        span {
+          &:after, &:before {
+            color: #DEB775;
+          }
+        }
+      }
+      .tariffs__price {
+        background-color: #FF9501;
+        &:after {
+          color: #FAD88F;
+        }
+      }
+    }
+    &:nth-child(2) {
+      .tariffs__head {
+        background-color: #962503;
+        span {
+          &:after, &:before {
+            color: #CD6E42;
+          }
+        }
+      }
+      .tariffs__price {
+        background-color: #C32603;
+         &:after {
+          color: #EB6E40;
+        }
+      }
+    }
+  }
+  &__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 5.7em;
+    padding: 0.1em;
+    font-size: 4.3em;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      color: #fff;
+      &:before {
+        content: '«';
+      }
+      &:after {
+        content: '»';
+      }
+    }
+  }
+  &__list {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 1.2em;
+    font-size: 2.1em;
+    font-weight: bold;
+    li {
+      margin-bottom: 0.3em;
+      position: relative;
+      padding-left: 1em;
+      &:before {
+        content: '';
+        display: block;
+        width: 0.25em;
+        height: 0.25em;
+        background-color: #C92204;
+        border-radius: 100%;
+        position: absolute;
+        top: 0.5em;
+        left: 0;
+      }
+    }
+  }
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.7em;
+    height: 2.7em;
+    font-size: 4.3em;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: -1em;
+    right: -0.4em;
+    &:after {
+      content: '₽';
+      font-size: 0.6em;
+      margin-bottom: -1em;
+    }
+  }
+  &__text {
+    font-size: 1.85em;
+    font-weight: bold;
+    color: $red;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  @media (max-width: $break_sm) {
+    &__list {
+      font-size: 2.8em;
+    }
+  }
+}

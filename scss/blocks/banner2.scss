@@ -1,0 +1,19 @@
+.banner2 {
+  &__block {
+    padding: 2.8em 3em;
+    font-size: 1.25em;
+    line-height: 1.4;
+    text-align: center;
+    span {
+      display: block;
+      font-size: 2.1em;
+      font-weight: bold;
+      color: $red;
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__block {
+      font-size: 2.4em;
+    }
+  }
+}

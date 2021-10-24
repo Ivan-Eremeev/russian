@@ -1,0 +1,20 @@
+.banner1 {
+  position: relative;
+  z-index: 2;
+  &__block {
+    padding: 1.8em 3em;
+    background-color: #AF280A;
+    font-size: 1.1em;
+    line-height: 1.3;
+    color: #fff;
+    span {
+      font-size: 1.2em;
+      color: #F3BD7D;
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__block {
+      font-size: 2.2em;
+    }
+  }
+}

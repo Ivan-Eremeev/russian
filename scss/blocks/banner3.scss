@@ -1,0 +1,34 @@
+.banner3 {
+  margin-bottom: 12.5em;
+  &__block {
+    padding: 1.4em 1.8em;
+    background-color: #E6B479;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 157.76 261.39' fill='%23DDA461'%3E%3Cpolygon class='cls-2' points='92.45 0 52.59 0 117.9 129.66 59.39 261.39 99.25 261.39 157.76 129.66 92.45 0'/%3E%3Cpolygon class='cls-2' points='39.87 0 0 0 65.31 129.66 6.8 261.39 46.67 261.39 105.17 129.66 39.87 0'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: $red;
+    line-height: 1.7;
+    a {
+      color: #000;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  &__col {
+    display: flex;
+    align-items: center;
+    @include col(6);
+    &:nth-child(2) {
+      text-align: right;
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__block {
+      font-size: 2.2em;
+    }
+  }
+}
