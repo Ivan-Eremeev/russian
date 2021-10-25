@@ -4,11 +4,15 @@
     margin-bottom: 4em;
   }
   &__col {
-    display: flex;
-    flex-direction: column;
     padding-left: 3em;
     @include col(6);
     position: relative;
+    > a {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      color: #000;
+    }
     &:nth-child(1) {
       .tariffs__head {
         background-color: #CB883B;

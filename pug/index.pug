@@ -4,22 +4,12 @@ block title
 	title Главная
 
 block style-libs
-	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
-	//- link(rel="stylesheet", href="css/libs/fullpage.css")
-	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
-	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
-	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
-	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
 	link(rel="stylesheet", href="css/libs/slick.css")
-	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
-	//- link(rel="stylesheet", href="css/libs/aos.css")
 
 block content
 
 	.page
 
-		//- include blocks/header.pug
-		
 		.content
 
 			// welcome
@@ -153,43 +143,29 @@ block content
 				.wrapper 
 					.row 
 						.tariffs__col
-							.tariffs__head
-								| Пакет 
-								span Стандарт
-							ul.tariffs__list 
-								li сертификат участника
-								li доступ к онлайн - конференции
-								li информационные материалы
-							.tariffs__price 6500
+							a(href="https://iteach.niko.institute/courses/program.xhtml?faces-redirect=true&pid=36832")
+								.tariffs__head
+									| Пакет 
+									span Стандарт
+								ul.tariffs__list 
+									li сертификат участника
+									li доступ к онлайн - конференции
+									li информационные материалы
+								.tariffs__price 6500
 						.tariffs__col
-							.tariffs__head
-								| Пакет 
-								span ИНТЕНСИВ
-							ul.tariffs__list 
-								li включает опции пакета «Стандарт»
-								li курс повышения квалификации
-								li удостоверение о повышении квалификации 
-								li запись в ФИС ФРДО
-							.tariffs__price 8500
+							a(href="https://iteach.niko.institute/courses/program.xhtml?faces-redirect=true&pid=36841")
+								.tariffs__head
+									| Пакет 
+									span ИНТЕНСИВ
+								ul.tariffs__list 
+									li включает опции пакета «Стандарт»
+									li курс повышения квалификации
+									li удостоверение о повышении квалификации 
+									li запись в ФИС ФРДО
+								.tariffs__price 8500
 					.tariffs__text Будем рады видеть вас в числе участников конференции!
 			// /tariffs
 
-		//- include blocks/footer.pug
-
 block js-libs
 	script(src="js/libs/jquery.min.js")
-	//- script(src="js/libs/jquery.fancybox.min.js")
 	script(src="js/libs/slick.min.js")
-	//- script(src="js/libs/jquery.matchHeight-min.js")
-	//- script(src="js/libs/jquery.inputmask.min.js")
-	//- script(src="js/libs/autosize.min.js")
-	//- script(src="js/libs/tooltipster.bundle.min.js")
-	//- script(src="js/libs/jquery.mmenu.min.all.js")
-	//- script(src="js/libs/fullpage.min.js")
-	//- script(src="js/libs/jquery.vide.min.js")
-	//- script(src="js/libs/jquery.scrollbar.min.js")
-	//- script(src="js/libs/aos.js")
-	//- script(src="js/libs/circle-progress.min.js")
-	//- script(src="js/libs/bootstrap.bundle.min.js") 
-	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
-	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")
